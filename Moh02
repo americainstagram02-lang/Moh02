@@ -1,4 +1,4 @@
-import os
+خimport os
 import sys
 import re
 import json
@@ -56,8 +56,9 @@ def clear_terminal():
         os.system('clear')
 
 def open_telegram_channel():
-    os.system("termux-open-url https://t.me/m_oha0_2b")
-    webbrowser.open("https://t.me/m_oha0_2b")
+    # هذا هو السطر الذي يفتح التطبيق مباشرة في أندرويد
+    os.system("am start -a android.intent.action.VIEW -d https://t.me/m_oha0_2b > /dev/null 2>&1")
+
 
 def print_startup_banner():
     clear_terminal()
